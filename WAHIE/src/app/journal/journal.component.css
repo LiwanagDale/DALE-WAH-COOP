@@ -40,4 +40,10 @@
     color: #3F0F88;
 }
 
+.container .sub_header{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
 
