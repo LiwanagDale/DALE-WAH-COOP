@@ -138,10 +138,32 @@
                         <input type="radio" class="tabs__radio" name="tabs-coop" id="Beneficiaries">
                         <label for="Beneficiaries" class="tabs__label">Beneficiaries</label>
 
+
                         <div class="tabs__content">
-                            
-                            
+                            <div class="buttons">
+                            <button class="Add" (click)="addTable()">Add Row</button> <br> <br>
+                        </div>
+                        <table class="style">
+                            <tr>
+                                <th>id</th>
+                                <th>name</th>
+                                <th>email</th>
+                                <th></th>
+                            </tr>
+                            <tr *ngFor="let item of row; let x = index">
+                                <td><input type="text" ></td>
+                                <td><input type="text" ></td>
+                                <td><input type="text"></td>
+                                <td> <button (click) = "deleteRow(x)"><i class="fa fa-trash"></i> Delete</button></td>
+                            </tr>
+                        </table> 
                         </div>  
+
+                       <div>
+                        
+                            
+                       </div>
+
                     </div>
 
                     <div class="buttons">
@@ -158,6 +180,21 @@
         </div>
     </form>
 </div>
+<script>
+    $('#add_benificiaries').on('click', function(){
+      var html = '';
+      html+='<tr>';
+      html+=' <td class="col-6 p-2 ps-0"><input type="text" class="form-control" placeholder="Enter Member" name="member_name[]"/></td>';
+      html+='<<td ><input type="date" class="form-control" placeholder="Enter Birthdate" name="member_birthdate[]"/></td>';
+      html+='<td class="col-3 pe-2 ps-0"><input type="text" class="form-control" placeholder="Enter Relation" name="member_relation[]"/></td>';
+      html+='<td><button type="button" class="btn p-2" id="remove_benificiaries" ><i class="fa-sharp fa-regular fa-circle-xmark fw-bold text-danger fs-3"></i> Delete </button></td>';
+      html+='<tr>';
+      $('.benificiary_table').append(html);
+  })
+  $(document).on('click', '#remove_benificiaries', function () {
+        $(this).parents('tr').remove();
+    });
+  </script>
 
 
 
