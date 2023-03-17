@@ -7,39 +7,39 @@
                 <div class="fields">
                     <div class="input-field1">
                         <label>First name</label>
-                        <input type="text"  required>
+                        <input type="text" id="first_name" required>
                     </div>
                     <!----======== MIDDLE NAME ======== -->
                     <div class="input-field2">
                         <label>Middle name</label>
-                        <input type="text"  required>
+                        <input type="text" id="middlet_name"  required>
                     </div>
                     <!----======== LASTNAME ======== -->
                     <div class="input-field3">
                         <label>Last name</label>
-                        <input type="text"  required>
+                        <input type="text" id="last_name" required>
                     </div>
                     <!----======== SUFFIX ======== -->
                     <div class="input-field4">
                         <label>Suffix</label>
-                        <input type="text"  required>
+                        <input type="text" id="suffix"  required>
                     </div>
 
                      <!----======== EMAIL ======== -->
                      <div class="input-field5">
                         <label>Email</label>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                     </div>
 
                     <!----======== Number ======== -->
                     <div class="input-field6">
                         <label>Number</label>
-                        <input type="Number" required>
+                        <input type="Number" id="mobile_number" required>
                     </div>
                     <!----======== Gender ======== -->
                     <div class="input-field7">
                         <label>Gender</label>
-                        <select required>
+                        <select  id="gender" required>
                             <option disabled selected>Select</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -54,17 +54,17 @@
                      <!----======== ID TYPE ======== -->                   
                     <div class="input-field8">
                         <label>Account ID</label>
-                        <input type="number"  required>
+                        <input type="number" id="account_id"  required>
                     </div>
                     <!----======== ID NUMBER ======== -->
                     <div class="input-field10">
                         <label>TIN Number</label>
-                        <input type="number"  required>
+                        <input type="number" id="tin_number"  required>
                     </div>
                      <!----======== CIVIL STATUS ======== -->               
                     <div class="input-field11">
                         <label>Civil Status</label>
-                        <select required>
+                        <select id="civil_status" required>
                             <option disabled selected>Select</option>
                             <option>Single</option>
                             <option>Maried</option>
@@ -73,24 +73,24 @@
                     <!----======== SPOUSE ======== -->
                     <div class="input-field12">
                         <label>Spouse</label>
-                        <input type="text"  required>
+                        <input type="text" id="spouse"  required>
                     </div>
 
                      <!----======== COMPANY ======== -->                   
                      <div class="input-field13">
                         <label>Company</label>
-                        <input type="text" required>
+                        <input type="text" id="company_name" required>
                     </div>
                     <!----======== DEAPARTMENT ======== -->
                    
                     <div class="input-field14">
                         <label>Department</label>
-                        <input type="Department" required>
+                        <input type="text" id="department" required>
                     </div>
                     <!----======== EMPLOYEMENT STATUS ======== -->
                     <div class="input-field15">
                         <label>Employement Status</label>
-                        <select required>
+                        <select  id="employement_status" required>
                             <option disabled selected>Select</option>
                             <option>Employed</option>
                             <option>Unemployed</option>
@@ -100,81 +100,44 @@
                     <!----======== OCCUPATION ======== -->                     
                     <div class="input-field16">
                         <label>Occupation</label>
-                        <input type="number"  required>
+                        <input type="text" id="occupation"  required>
                     </div>
                     <!----======== COMPANY ADDRESS ======== -->
                     <div class="input-field17">
                         <label>Company Address</label>
-                        <input type="text"  required>
+                        <input type="text" id="company_address"  required>
                     </div>
                     <!----======== TABS ======== -->
                     <div class="tabs">
                         <input type="radio" class="tabs__radio" name="tabs-coop" id="Address" checked>
                         <label for="Address" class="tabs__label">Address</label>
                         <div class="tabs__content">
-
+                            
                             <div class="input-field18">
+                            <!----======== ADDRESS ======== -->
                                 <label>Current Address</label>
-                                <input type="text" placeholder="Street/Block/House number" required>
+                                <input type="text" id="street" placeholder="Street/Block/House number" required>
                             </div>
-
+                            <!----======== CITY/TOWN ======== -->
                             <div class="input-field19">
-                                <input type="text" placeholder="City/Town" required>
+                                <input type="text" id="city_town" placeholder="City/Town" required>
                             </div>
+                            <!----======== PROVINCE ======== -->
                             <div class="input-field20">
-                                <input type="text" placeholder="State/Province" required>
+                                <input type="text" id="state_province" placeholder="State/Province" required>
                         </div>
                             <div class="input-field21">
-                                <input type="text" placeholder="Postal Code" required>
+                            <!----======== POSTAL CODE ======== -->
+                                <input type="text" id="postal_code" placeholder="Postal Code" required>
                             </div>
                             <div class="input-field22">
-                                <input type="text" placeholder="Barangay" required>
+                            <!----======== BARANGAY ======== -->
+                                <input type="text" id="barangay" placeholder="Barangay" required>
                             </div>
-                        </div>
+                        </div>   
                         <input type="radio" class="tabs__radio" name="tabs-coop" id="Beneficiaries">
                         <label for="Beneficiaries" class="tabs__label">Beneficiaries</label>
-                        <div class="tabs__content">
-
-                            <div class="input-field23">
-                                <label>Beneficiaries</label>
-                                <input type="Department" required>
-                            </div>
-
-                            <div class="input-field24">
-                                <label>Date of Birth</label>
-                                <input type="date" required>
-                            </div>
-                            
-                            <div class="input-field25">
-                                <label>Relationship</label>
-                                <input type="Department" required>
-                            </div>
-
-                            <div class="input-field26">
-                                
-                                <input type="Department" required>
-                            </div>
-
-                            <div class="input-field27">
-                                <input type="date" required>
-                            </div>
-
-                            <div class="input-field28">
-                                <input type="Department" required>
-                            </div>
-
-                            <div class="input-field29">
-                                <input type="Department" required>
-                            </div>
-
-                            <div class="input-field30">
-                                <input type="date" required>
-                            </div>
-
-                            <div class="input-field31">
-                                <input type="Department" required>
-                            </div>
-                        </div>
+                       
                     </div>
 
                     <div class="buttons">
