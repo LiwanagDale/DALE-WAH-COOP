@@ -189,14 +189,14 @@ form .fields .input-field16{
     display: flex;
     width: calc(34%);
     flex-direction: column;
-    margin: auto;
+    margin: 4px 0;
 }
 
 form .fields .input-field17{
     display: flex;
     width: calc(50%);
     flex-direction: column;
-    margin: auto;
+    margin: 4px 0;
 }
 form .fields .input-field18{
     display: flex;
