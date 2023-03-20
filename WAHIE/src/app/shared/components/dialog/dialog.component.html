@@ -138,38 +138,37 @@
                         <input type="radio" class="tabs__radio" name="tabs-coop" id="Beneficiaries">
                         <label for="Beneficiaries" class="tabs__label">Beneficiaries</label>
 
+                                <div class="tabs__content">
+                                        <table class="tablebene">
+                                            <tr>
+                                                <th class="benelabel">Name</th>
+                                                <th class="benelabel">Date of Birth</th>
+                                                <th class="benelabel">Relationship</th>
+                                            </tr>
+                                            <tr *ngFor="let item of row; let x = index">
+                                                <td class="beneinput"><input type="text"></td>
+                                                <td class="beneinput"><input type="date" ></td>
+                                                <td class="beneinput"><input type="text"></td>
+                                                <td class="delbut"> <button (click) = "deleteRow(x)">
+                                                <span class="btnText">Delete</span>
+                                                </button></td>
+                                            </tr>
 
-                        <div class="tabs__content">
-                            <div class="buttons">
-                            <button class="Add" (click)="addTable()">Add Row</button> <br> <br>
-                        </div>
-                        <table class="style">
-                            <tr>
-                                <th>id</th>
-                                <th>name</th>
-                                <th>email</th>
-                                <th></th>
-                            </tr>
-                            <tr *ngFor="let item of row; let x = index">
-                                <td><input type="text" ></td>
-                                <td><input type="text" ></td>
-                                <td><input type="text"></td>
-                                <td> <button (click) = "deleteRow(x)"><i class="fa fa-trash"></i> Delete</button></td>
-                            </tr>
-                        </table> 
-                        </div>  
-
-                       <div>
-                        
-                            
+                                            <div>
+                                                <td><button class="Add" (click)="addTable()">
+                                                <span class="btnText">Add row</span>0-
+                                                </button></td>
+                                            </div>
+                                        </table> 
+                                </div>  
+                            <div>
                        </div>
-
                     </div>
 
                     <div class="buttons">
-                        <div class="backBtn">
+                        <button class="back">
                             <span class="btnText">Back</span>
-                        </div>
+                        </button>
         
                         <button class="sumbit">
                             <span class="btnText">Save</span>

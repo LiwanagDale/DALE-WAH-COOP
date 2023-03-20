@@ -20,14 +20,14 @@
 
 .container{
     position: relative;
-    width: 1450px;
+    width: 1200px;
     padding: 40px;
     margin: 0 15px;
     box-shadow: 5px 5px 5px #ccc;
     border-radius: 20px;
     background-color: #fff;
 }
-
+    
 .container .head{
     display: flex;
     flex-wrap: wrap;
@@ -40,10 +40,38 @@
     color: #3F0F88;
 }
 
-.container .sub_header{
+.sub_header {
     display: flex;
     position: relative;
     flex-wrap: wrap;
 }
 
+label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #3F0F88;
+}
 
+.tablejournal{
+    width: 100%;
+}
+.beneinput input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 36px;
+    margin: 2px 0;
+    display: flex;
+    width: 100%;
+    
+}
+
+ .journallabel{
+     font-size: 16px;
+     font-weight: 500;
+     color: #3F0F88;
+ }

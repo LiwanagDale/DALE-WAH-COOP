@@ -232,68 +232,6 @@ form .fields .input-field22{
     margin: auto;
 }
 
-form .fields .input-field23{
-    display: flex;
-    width: calc(40%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field24{
-    display: flex;
-    width: calc(20%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field25{
-    display: flex;
-    width: calc(38%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field26{
-    display: flex;
-    width: calc(40%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field27{
-    display: flex;
-    width: calc(20%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field28{
-    display: flex;
-    width: calc(38%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field29{
-    display: flex;
-    width: calc(40%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field30{
-    display: flex;
-    width: calc(20%);
-    flex-direction: column;
-    margin: auto;
-}
-
-form .fields .input-field31{
-    display: flex;
-    width: calc(38%);
-    flex-direction: column;
-    margin: auto;
-}
 .input-field1,
 .input-field2,
 .input-field3,
@@ -316,15 +254,6 @@ form .fields .input-field31{
 .input-field20, 
 .input-field21, 
 .input-field22, 
-.input-field23,
-.input-field24,
-.input-field25,
-.input-field26,
-.input-field27,
-.input-field28,
-.input-field29,
-.input-field30,
-.input-field31,
 label{
     font-size: 16px;
     font-weight: 500;
@@ -352,15 +281,6 @@ label{
 .input-field20 input,
 .input-field21 input,
 .input-field22 input,
-.input-field23 input,
-.input-field24 input,
-.input-field25 input,
-.input-field26 input,
-.input-field27 input,
-.input-field28 input,
-.input-field29 input,
-.input-field30 input,
-.input-field31 input,
  select{
     outline: none;
     font-size: 14px;
@@ -391,7 +311,6 @@ form .fields .tabs__radio{
 form .fields .tabs__content{
     order: 1;
     width: 100%;
-    border-bottom: 3px solid #dddd;
     line-height: 1.5;
     font-size: 0.9em;
     display: none;
@@ -410,9 +329,33 @@ form .fields .tabs__content{
     
  }
 
+ .tablebene{
+width: 100%;
+
+ }
+.beneinput input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 36px;
+    margin: 2px 0;
+    display: flex;
+    width: 100%;
+    
+}
+
+ .benelabel{
+     font-size: 16px;
+     font-weight: 500;
+     color: #3F0F88;
+ }
 
 
- .container form button, .backBtn{
+ /* .container form button, .backBtn{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -443,7 +386,8 @@ form .buttons{
 }
 form .buttons button , .backBtn{
     margin-right: 14px;
-}
+} */
+
 
 
 
