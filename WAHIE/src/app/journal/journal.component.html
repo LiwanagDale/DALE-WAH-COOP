@@ -1,22 +1,29 @@
 <div class="container">
-    <header>JOURNAL ENTRY</header>
+    
             <div class="sub_header">
                 <div class="journdate">
-                    <label>Date</label>
+                    <label> Journal Date </label>
                     <input class="inputdate" type="date" id="journaldate" required>
                 </div>
           
                 <div class="journnumber">
-                    <label>Journal Number</label>
+                    <label>Journal Number </label>
                     <input class="numberj" type="number" id="journalnumber" required>
+                </div>
+
+                <div>
+                    <button class="Add" (click)="addTable()">
+                        <i class="ti ti-plus"></i>
+                        <span class="btnText"> Add  </span>
+                        </button>
                 </div>
                
             </div>
 
-                <div class="journals">
+                    <div class="journals">
                         <table class="tablejournal">
                              <tr>
-                                    <th ></th>
+                                    
                                     <th class="journallabel">No.</th>
                                     <th class="journallabel">Account</th>
                                     <th class="journallabel">Debits</th>
@@ -25,9 +32,9 @@
                                     <th class="journallabel">Name</th>
                             </tr>
                                 <tr *ngFor="let item of row; let x = index">
-                                    <td><button class="Add" (click)="addTable()">
-                                        <span class="btnText">Add row</span>
-                                        </button></td>
+                                    
+                                   
+                                        
                                         <th class="journallabel">#</th>
                                         <td class="beneinput"><select type="text">
                                             <option disabled selected>Select</option>
@@ -46,20 +53,10 @@
                                             <option>Name 3</option>
                                         </select></td>
 
-                                        <td class="delbut"> <button (click) = "deleteRow(x)">
-                                        <span class="btnText">Delete</span>
-                                        </button></td>
-                                 </tr>
-
-                                    
+                                            <td > <button class="delbut" (click) = "deleteRow(x)">
+                                                <i class="ti ti-square-rounded-x"></i>
+                                                </button></td>
+                                 </tr>         
                         </table> 
                     </div>  
-            <div>
-
-
-            </div>
-
-            <div>
-                
-            </div>
 </div>

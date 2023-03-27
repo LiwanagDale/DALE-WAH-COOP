@@ -342,7 +342,6 @@ width: 100%;
     border: 1px solid #aaa;
     padding: 0 15px;
     height: 36px;
-    margin: 2px 0;
     display: flex;
     width: 100%;
     
@@ -355,7 +354,7 @@ width: 100%;
  }
 
 
- /* .container form button, .backBtn{
+ /* .container form button {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -384,13 +383,77 @@ form .buttons{
     display: flex;
     align-items: center;
 }
-form .buttons button , .backBtn{
+form .buttons button , .back{
     margin-right: 14px;
 } */
 
+.buttons{
+    display: block;
+    align-items: center;
+}
+
+.back{
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: #ede9f2;
+    color: #7f7a7a;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btnTextb{
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.save{
+    height: 40px;
+    width: 80px;
+    border: none;
+    align-items: end;
+    background-color: #530ea8;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.delbut{
+    height: auto;
+    width:auto;
+    margin-left: 4px;
+    border: none;
+    font-size: 24px;
+    background: none;
+    background-color: none;
+    color: #ff0000;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+}
 
 
 
+.tablebene .addbut{
+    height: auto;
+    width:auto;
+    margin-right: 4px;
+    border: none;;
+    font-size: 24px;
+    background: none;
+    background-color: none;
+    color: #530ea8;
+    border-radius: 5px;
+    outline: none;
+   
+}
+.btnTexts{
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+}
 
 @media (max-width: 1200px) {
     .container form{

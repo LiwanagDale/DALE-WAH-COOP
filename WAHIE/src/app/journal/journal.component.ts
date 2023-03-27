@@ -9,26 +9,38 @@ export class JournalComponent {
   row = [
     {
       id : '',
-      name: '',
-      email: ''
+      account: '',
+      debits: '',
+      credits: '',
+      description: '',
+      name: ''
     },
     {
       id : '',
-      name: '',
-      email: ''
+      account: '',
+      debits: '',
+      credits: '',
+      description: '',
+      name: ''
     },
     {
       id : '',
-      name: '',
-      email: ''
+      account: '',
+      debits: '',
+      credits: '',
+      description: '',
+      name: ''
     }
   ];
   
   addTable() {
     const obj = {
-      id: '',
-      name: '',
-      email: ''
+      id : '',
+      account: '',
+      debits: '',
+      credits: '',
+      description: '',
+      name: ''
     }
     this.row.push(obj)
   }

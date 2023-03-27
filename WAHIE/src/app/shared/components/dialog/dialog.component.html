@@ -1,5 +1,8 @@
 <div class="container">
     <header>Member Information</header>
+    <body>
+
+    
     <form action="#">
         <div class="form first">
             <div class="details personal">
@@ -141,43 +144,50 @@
                                 <div class="tabs__content">
                                         <table class="tablebene">
                                             <tr>
+                                                <th></th>
                                                 <th class="benelabel">Name</th>
                                                 <th class="benelabel">Date of Birth</th>
                                                 <th class="benelabel">Relationship</th>
                                             </tr>
                                             <tr *ngFor="let item of row; let x = index">
+                                                <td class="addbut"> 
+                                                    <button class="addbut" (click)="addTable()">
+                                                        <i class="ti ti-square-rounded-plus"></i>
+                                                    </button></td>
                                                 <td class="beneinput"><input type="text"></td>
                                                 <td class="beneinput"><input type="date" ></td>
                                                 <td class="beneinput"><input type="text"></td>
-                                                <td class="delbut"> <button (click) = "deleteRow(x)">
-                                                <span class="btnText">Delete</span>
+                                                <td class="delbut"> 
+                                                    <button class="delbut" (click) = "deleteRow(x)">
+                                                    <i class="ti ti-square-rounded-x"></i>
                                                 </button></td>
                                             </tr>
-
-                                            <div>
-                                                <td><button class="Add" (click)="addTable()">
-                                                <span class="btnText">Add row</span>
-                                                </button></td>
-                                            </div>
                                         </table> 
                                 </div>  
                             <div>
                        </div>
                     </div>
-
-                    <div class="buttons">
-                        <button class="back">
-                            <span class="btnText">Back</span>
-                        </button>
-        
-                        <button class="sumbit">
-                            <span class="btnText">Save</span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
     </form>
+</body>
+
+<footer>
+    <div>
+        <div class="buttons">
+            <button class="back">
+                <span class="btnTextb">Back</span>
+            </button>
+        
+            <button class="save">
+            <span class="btnTexts">Save</span>
+        </button>
+            
+        </div>
+    </div>
+   
+</footer>
 </div>
 <script>
     $('#add_benificiaries').on('click', function(){

@@ -12,16 +12,6 @@ export class DialogComponent {
       id : '',
       name: '',
       email: ''
-    },
-    {
-      id : '',
-      name: '',
-      email: ''
-    },
-    {
-      id : '',
-      name: '',
-      email: ''
     }
   ];
   
